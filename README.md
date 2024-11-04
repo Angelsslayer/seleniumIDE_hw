@@ -80,9 +80,7 @@ Make sure you have Node.js and npm installed on your system. Follow these steps 
 :white_check_mark: **The steps below may assist you:**
 `Open the folder of node package manager(npm), better to search it using selenium-side-runner. Find the chromedriver.exe file and move it up to the root folder of npm`
   
-    ```cmd
     where selenium-side-runner
-    ```
     
   This will execute the script specified in the `.side` file.
   
@@ -90,9 +88,7 @@ Make sure you have Node.js and npm installed on your system. Follow these steps 
 
 :white_check_mark: 
 
-    ```cmd
     selenium-side-runner 05_Practical_TaskgreenCity_hw.side --config .side.yaml
-    ```    
 
 ## Demo Video
 
