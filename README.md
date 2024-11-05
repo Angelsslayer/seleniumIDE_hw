@@ -73,23 +73,27 @@ Make sure you have Node.js and npm installed on your system. Follow these steps 
     ```cmd
     selenium-side-runner 05_Practical_TaskgreenCity_hw.side
     ```
-    
-:warning: **Case you encounter an error:**
-`The ChromeDriver could not be found on the current PATH. Please download the latest version of the ChromeDriver from http://chromedriver.storage.googleapis.com/index.html and ensure it can be found on your PATH.`
+ This will execute the script specified in the `.side` file, see the [video instructions](https://youtu.be/x7uLkua6r8c).
+
+## Script Information
+
+- :warning: Case you encounter an error:
+   `The ChromeDriver could not be found on the current PATH. Please download the latest version of the ChromeDriver from http://chromedriver.storage.googleapis.com/index.html and ensure it can be found on your PATH.`
 
 :white_check_mark: **The steps below may assist you:**
-`Open the folder of node package manager(npm), better to search it using selenium-side-runner. Find the chromedriver.exe file and move it up to the root folder of npm`
+    1. Open the folder of node package manager(npm), better to search it using search by path to selenium-side-runner, use the command below
+    2. Find the chromedriver.exe file.
+    3. Move it up to the root folder of npm.
   
     where selenium-side-runner
     
-  This will execute the script specified in the `.side` file.
+ Watch the video with the [error solution](https://youtu.be/VCUVo2pNqNg).
   
-:warning: **If the Green City website loads in Ukrainian, it is due to the localization of our device and the script below may help resolve the issue. It also runs the script without GIU**
 
-:white_check_mark: 
+- :warning: If the Green City website loads in Ukrainian, it is due to the localization of our device and the script below may help resolve the issue. It also runs the script without GIU
+
+:white_check_mark: **Run this code to include a `.side.yaml` file with instructions to make it run silently (without GIU):**
 
     selenium-side-runner 05_Practical_TaskgreenCity_hw.side --config .side.yaml
 
-## Demo Video
 
-For a full demonstration, watch the video here: [Video Link](#) (link to be added).
