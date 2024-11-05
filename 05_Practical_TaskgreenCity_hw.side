@@ -1,0 +1,3378 @@
+{
+  "id": "ff8a0b7c-5bf7-4db9-a773-51e24de2e3d2",
+  "version": "2.0",
+  "name": "05_Practical TaskgreenCity_hw1",
+  "url": "https://www.greencity.cx.ua/#/greenCity",
+  "tests": [{
+    "id": "9fe8fe45-507e-419b-8176-5dec11ac07ef",
+    "name": "[POSITIVE] registrate user",
+    "commands": [{
+      "id": "7bba9297-277c-45c9-b6ad-387c64c9a131",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e4092fd-6ee1-4628-b65b-a3943d1e5604",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "445429ef-1d3c-4fc2-87c4-a9e2274144a6",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "GreenCity — Build Eco-Friendly Habits Today",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72be67af-5046-42ca-811d-e09b9f2e75b0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "70b2b095-e1c4-46a5-b955-8a257c60f983",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e404ed05-da6b-48a0-94f0-f882e0d8a742",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c523078a-fe1d-4358-80d7-771af47a0a1b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "46fa492a-13b3-4637-bdab-13a1bfcbd22b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return new Date().valueOf();",
+      "targets": [],
+      "value": "timestamp"
+    }, {
+      "id": "9285bb95-fe7e-4d04-8689-4fae4efd80e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "598b8848-cf49-41c5-8046-fad99029a7d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test${timestamp}@gmail.com"
+    }, {
+      "id": "0496c585-9ead-4eba-9c5b-2fb016b0dcb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d1905d-ad64-4e2a-a6c5-93dc71b91309",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser${timestamp}"
+    }, {
+      "id": "3c229a58-810c-449b-9605-a85591718e3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af3bf286-c12c-4e81-b917-f30558a4c8be",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "9b5466db-87d4-4ad1-b9b6-89854b237b55",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "399cc54e-328b-4b1a-bf5c-74cc6e99f991",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "319ccbf3-5a79-4f28-86b4-238d1f0e69e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2283a2e3-5e10-47e7-9258-c76ae600d3f5",
+      "comment": "",
+      "command": "waitForElementEditable",
+      "target": "css=.greenStyle",
+      "targets": [
+        ["css=.greenStyle", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": "500"
+    }, {
+      "id": "7aa5b0a4-87c6-4b27-a3d4-6e2ec6d65e0f",
+      "comment": "",
+      "command": "run",
+      "target": "assertNoErrorMessagesPresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea9c57ea-a5df-40c1-a2ca-7b1992c7cda9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenStyle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "173f1a7d-f310-440d-8221-e34d64163388",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=simple-snack-bar>div",
+      "targets": [],
+      "value": "Congratulations! You have successfully registered on the site. Please confirm your email address in the email box."
+    }]
+  }, {
+    "id": "e1cf02d0-9832-4a89-a065-51a433553626",
+    "name": "[NEGATIVE] register user: email without @",
+    "commands": [{
+      "id": "9835c982-26fa-41f4-9fe2-aea1fd999cd7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f7d0bc4-0212-41ea-ab2e-cfde63f50711",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9051b89e-0326-4b3c-8d53-f4907941b8b0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "d0b7869a-6889-44aa-9f5c-95c6d496121e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30a66c1-7130-43d7-b23c-5d5b182ed6ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e0ec0c-9aa2-4e2a-a038-64aea05123ac",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "48eb5bec-8a93-497c-888c-23ad2eaa4569",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "154a1323-c663-4588-b616-2b51e5cf2d09",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "testdomain.com"
+    }, {
+      "id": "65f55083-0ba9-4f4b-824a-f7cf8a60b6e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "952508e8-09d6-45bc-9d1c-e937af8672b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "253b5df5-7c78-4f29-828e-7baa00b4f427",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0761af55-b506-4981-9983-d3ff9577e599",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "d1f0b139-2fec-4256-a2c0-e4dabce276a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89ea1fa-241b-4261-ac72-47a60f2a66de",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "2e787386-209b-4ad8-b670-61e6b980ff59",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91307471-11ce-4319-9929-19fefe480c0b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "Please check that your e-mail address is indicated correctly"
+    }]
+  }, {
+    "id": "b9eb4c93-5de4-4186-ab48-5faa83e4b1be",
+    "name": "[NEGATIVE] register user: email without '.' (dot)",
+    "commands": [{
+      "id": "f9047d29-958e-494e-913a-cc6568898757",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "496ee696-f5b3-4256-8f92-4b1cc6441fb6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51810889-b29f-423b-907c-5762e1dba4c2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "43099460-7a28-4b45-b9ee-7f9aa5125e1e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d0461a-b84e-489d-8c1b-abb44e42ae45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9fda0fb-2ac0-4672-a679-2de9ad06521e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "101e1706-4239-456d-a81c-88fd4794351a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f95fe0d-cde3-4103-82fa-c46e6cc1389a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domaincom"
+    }, {
+      "id": "d4f2c068-3a89-4f56-afb3-89a786a83714",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad122c8-f0d5-49c2-afa8-add44963b87d",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "70eed929-629a-41fc-aa3f-f49db1a34319",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cb4cc7e-886b-416d-b061-504095970088",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "99e88884-2a2e-405b-89d0-61e1f7c02fc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2d4dd54-1c48-4ebc-a5fe-a48e5f9ba1e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "88dc0ef4-dccc-407c-bf5a-1382f8a8deca",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a042400-f760-4540-92c6-2d107e82f0e3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "Please check that your e-mail address is indicated correctly"
+    }]
+  }, {
+    "id": "09af0352-bcdd-4143-a87e-1d64a4a43ee0",
+    "name": "[NEGATIVE] register user: email empty",
+    "commands": [{
+      "id": "13b77e55-a956-4c96-8b8a-2469b3631a6a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c07ccfa-bcae-44df-992d-2e2329ff0998",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6079b6b8-6b93-4277-b405-87bb294fb79f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "af8d7598-4bb0-4a63-8c45-0e005d8d1067",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02fefee4-5e22-448e-8b50-2dc2dc6b12b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43681e56-0a2b-4541-bcf2-359b864a834b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "ff601a97-145d-43e9-bcb0-8813e06f0045",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff6e93e0-943d-4f05-85b4-8c05378263af",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55634fc9-a140-4498-96cb-388fb97e2a25",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "edc9af52-e953-43e5-84b1-3fade45c2c6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3737f67-d783-4394-9de3-07e16d186ccc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "7fa27388-c8bf-44f5-8851-4ddd000b518f",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89921aa7-6798-4d97-ae55-e2045e8efb78",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "7d33cbf0-beb5-497a-85cc-abd3e7a38df8",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a47890d-9557-4315-87b8-8bfe6ddc9779",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "Email is required."
+    }]
+  }, {
+    "id": "4228078b-7f8e-47ca-8161-6418bb2d450b",
+    "name": "[NEGATIVE] register user: username with '.'dot at the start",
+    "commands": [{
+      "id": "a1a419e3-b959-4cc3-a1e1-5bfbb12a4e7d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba28efd9-0886-4f86-83e0-1d1dbaf8366c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a5df786-d26e-47c8-9cbe-172a196cd90b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "52134bf6-5bd5-44d0-b905-69644c649fff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b715261c-88fe-49ae-a56f-ee12c1178ecb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5545a5a0-b9e6-475e-b39e-3e14ee2fd7d4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "133e2350-1147-48ae-9172-f763c3182e89",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05380dae-87dc-4afd-a384-54fb9d5f5b60",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "817b9955-48f3-42dc-bec9-745d33908e5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c8a31d6-7251-4e42-8ea8-eecd4c054019",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ".TestUser1"
+    }, {
+      "id": "634ff11e-fb15-490c-9ab2-1abb9377af6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e8cb75a-d613-49cd-8955-fc44511e7d18",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "c2384015-c8d5-4c00-a0f9-4ef92d1bdb42",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c9e7fda-2c69-4a53-85a4-fc3192675cac",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "1b6667f5-cf14-4055-80e5-840c8d685918",
+      "comment": "",
+      "command": "click",
+      "target": "css=.greenStyle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d962ac18-7dd0-4d18-a252-18884f2456d8",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41214a1a-82c1-44f2-8e03-6e42a8508c91",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "The user name must contain 1-30 characters and can contain letters, numbers and a dot. Dot at the start, at the end and consecutive dot is forbidden."
+    }]
+  }, {
+    "id": "a16cdc9d-1d10-4688-9cbd-ebc6701c7d9e",
+    "name": "[NEGATIVE] register user: username with '.'dot at the end",
+    "commands": [{
+      "id": "49c99703-743c-412d-930e-b6fddf1c6c2d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcdac24a-c592-43a0-a8e2-a1e06074f5f8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "846b19ba-7700-4731-a5c9-8e52a91b29fa",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "f0b91596-d17d-48aa-96e8-60338808fc6d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d9e3d55-a69f-4883-a4c3-18cc0ea373ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8d1b750-c432-425c-a8dd-8e1985d02bcd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "e5651bb5-acf1-40bd-9ec3-ac8d865e8ec8",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01ffb9ca-ec8d-42d6-a564-7940edebf49f",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "b1c29b18-00f7-4505-a98f-408fe44b66f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41ffe6e2-0c7f-4b56-a500-0477f333fc48",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser1."
+    }, {
+      "id": "8c1bc050-f3be-499b-9923-e816a1c81a0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5eb485c-8af9-4ed7-b64c-e74b8c6d2f6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "5c1ad4ca-0e69-4a54-b42e-25448283f7c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61411f19-a78f-43ad-9f25-fdc83bce6b29",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "bc9ecb57-49f9-469f-9d0f-2dc3639ba204",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aaa8940a-2334-4934-bf37-d975b00356d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "The user name must contain 1-30 characters and can contain letters, numbers and a dot. Dot at the start, at the end and consecutive dot is forbidden."
+    }]
+  }, {
+    "id": "0f57ef93-708b-4646-a4b9-329b66e9dae4",
+    "name": "[NEGATIVE] register user: username with consecutive '.'dots",
+    "commands": [{
+      "id": "fa7d10e6-e14f-472d-a41f-b8f24c027d9a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "663fb719-3d34-4c17-a9af-1b4af715e8a7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfd7ded0-84ba-4622-af42-ad6b7c7397e9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "81834a80-b321-408b-b62f-c1275d83b0ec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2416b2a9-ae4e-420e-bf4a-5774b07ccb58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "931590dc-1e20-473a-871e-0f6b33443d24",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "6a43e11c-0ae0-49c9-80d7-ca22191f5c1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77d84937-2697-49e3-848c-ede9319a898a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "c18dba3f-3741-4309-a819-d181e6560a12",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2b809b-cbd5-4a50-a559-da23b4ef8553",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "test..user"
+    }, {
+      "id": "3975f568-5c49-412a-b4ab-b8a2f6210b54",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e54785b-2269-461f-ac64-3f46762de5be",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "2e7b0208-c6ec-46e8-9a7a-bc710605f21e",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b454c82e-654f-42fa-9d49-5e3500a767f8",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "305dc9a4-6ebd-4e6e-b3a8-69b64c4ff879",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55211542-6e57-42de-b64d-e6fab676d69c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "The user name must contain 1-30 characters and can contain letters, numbers and a dot. Dot at the start, at the end and consecutive dot is forbidden."
+    }]
+  }, {
+    "id": "a150acc2-76de-40fa-814a-ff2007608c29",
+    "name": "[NEGATIVE] register user: username with prohibited characters",
+    "commands": [{
+      "id": "b86c4f40-57dd-484a-9104-3d0ea0c7ae60",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35409d6c-f7aa-4241-8dc3-34df6888094e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "867d968a-d4f7-4113-81f7-1bb64cf11a35",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "dd6d4e1e-9e44-4b6b-b91c-47d88eea6e30",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad3f866f-b36e-4f6e-9e05-d971218ab8e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1206bac4-5df6-4a53-86c3-a570ca32209c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "aa023fcf-cace-4cb9-943a-d4adedf1e6aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39351adf-7a22-45ca-b8e3-8845e61450d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "f5636862-86f3-43b8-b7d6-2c3b03b3b9d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44002bba-b83e-4dae-8f16-65b51f3ef409",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser!"
+    }, {
+      "id": "742588fe-2ae4-4e2f-aa84-470ba81ebf42",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf97662f-1bf5-4839-97e2-0115f94452d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "473b6c35-b3e0-44f0-a48d-e82b77749ef4",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b5964e9-65f8-4c6e-ae0f-d4d06f69f5b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "3671cd14-7cba-433f-acab-b555d3412ced",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "205701fd-4982-4e61-8322-3d654b92d735",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "The user name must contain 1-30 characters and can contain letters, numbers and a dot. Dot at the start, at the end and consecutive dot is forbidden."
+    }]
+  }, {
+    "id": "af11cd1a-dd4f-4cc0-995d-13185fd54969",
+    "name": "[NEGATIVE] register user: username empty",
+    "commands": [{
+      "id": "301cbf07-f59c-4539-a30f-0891f04dc743",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e555bf-9981-425e-b05b-b165fb52c180",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28df4338-07a9-4552-87d8-4b54a1fe56c3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "2abb81cc-e73c-4b7a-8fef-c4dd24454a56",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb5792ce-df19-41cf-bf28-8ad38c910084",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c769ede-8fae-4223-8b80-ddbab8ddb4c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "520314a8-94d0-4c4f-a43c-3696d5389295",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e0ca00a-06d9-43f7-9703-05024b7c9602",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "e3367f81-d2da-45ac-bf3b-b6a4928d8918",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac6ffc5-d743-4dea-9472-7b1e24efd39c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b1aab5-e1dc-441f-8bd5-4925023194c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "bcf83d3f-b400-49ef-b858-4a3490ea212f",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc834268-12d5-4f64-a51d-14e1dbcf1427",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "50c99b09-a8c1-49c3-9ea0-bd2a1280d47e",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b29a2824-10ef-492d-9a4f-6909c402c5e7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "User name is required."
+    }]
+  }, {
+    "id": "edbc688f-480f-412f-9125-95be141e35aa",
+    "name": "[NEGATIVE] register user: password 7 length",
+    "commands": [{
+      "id": "e1483681-6979-4d2e-aab4-76b7e3b6dccd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72354222-3754-4227-9bc6-878f508b0787",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc5576c9-cd88-4f34-9154-698ed07d3b17",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "db892661-0a3b-407d-ba27-ab6eb7bf1dc4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec09443-46a8-4953-9001-603629fb7a4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed6e1dc-9629-489a-846e-7f2d8fec988f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "02f59115-940c-4c0c-a0cb-25e69c53df27",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0904fe4d-e2e6-4f76-b1f8-125a70f23d03",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "24ed8265-ab3d-4c61-be1d-af6118adde97",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d573bcf4-caf7-489b-8413-4f9add8ad303",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser"
+    }, {
+      "id": "80dc8bfc-059f-45e6-863f-ba094fe94a07",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41537193-8848-4e57-8cb5-6ed91389a21b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "7_Chars"
+    }, {
+      "id": "b0937660-8918-42b9-8c9f-fb0021674e1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8bc91ea-f6a0-438e-ac3f-4a8e1e2db09a",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "7_Chars"
+    }, {
+      "id": "49bbf818-bd56-475f-ae74-4ed61b3f2bd6",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4360c1f4-42eb-4703-bffe-035c841202b1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": "Password have from 8 to 20 characters long without spaces and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), a digit (0-9), and a special character (~`!@#$%^&*()+=_-{}[]|:;”’?/<>,.)"
+    }, {
+      "id": "86ec91e6-480e-46fe-b86d-acc71cf51bf9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-err-msg",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8711fd7b-9331-4301-95a2-8c3d23406656",
+    "name": "[NEGATIVE] register user: password 21 length",
+    "commands": [{
+      "id": "728a3c7c-2ac7-4790-99c2-68835a916e41",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dee9f1a6-3a82-4913-9715-a7733bbcbc5c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4df7b530-91b0-4d4b-9662-1d6c710b1deb",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "594baa63-ae59-4def-9dcb-3a9f2f23669f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee04d87c-accf-4235-af4c-8800db4fe2a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19532bf2-66f5-49f0-96ba-7594b7612131",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "6856c443-fe55-4174-94d5-ae7e6c01b5c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de1e5f29-91ed-4cb6-a56b-2754ae94b8f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "8477fe9b-f364-4040-bd8d-172957ee93cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0d2248-6551-46f2-ac21-817599f2e2ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser"
+    }, {
+      "id": "c9a638c9-286d-48c2-b05f-c48b36b7e796",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17bd4e39-1b22-423a-ad7d-bb8d4e8abf58",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "21_Chars*length^passw"
+    }, {
+      "id": "069bd04d-859f-47fb-98c3-b5f6f514ed38",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3717f00f-e388-470b-bd76-5210b4eb8bf3",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "21_Chars*length^passw"
+    }, {
+      "id": "0e4f9748-f372-4f2e-82f2-32851941591c",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df27739-4097-4758-bb9c-74e9842e9108",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": "Password have from 8 to 20 characters long without spaces and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), a digit (0-9), and a special character (~`!@#$%^&*()+=_-{}[]|:;”’?/<>,.)"
+    }, {
+      "id": "13089b42-c0ec-422e-b7b8-5c4dd9bc7b84",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-err-msg",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "86ab23d8-37cd-4ffc-9bee-b5389bf7cf69",
+    "name": "assertSingleErrorMessagePresent",
+    "commands": [{
+      "id": "03b5dfdc-7e16-4ca9-bb42-72d43200fe97",
+      "comment": "Only one error message is present",
+      "command": "executeScript",
+      "target": "return document.querySelectorAll('.error-message').length;",
+      "targets": [],
+      "value": "errorMessagesArray"
+    }, {
+      "id": "7014ef28-1eb8-41d1-963e-c7967bccc0e4",
+      "comment": "",
+      "command": "if",
+      "target": "${errorMessagesArray}  != 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53296fb1-070a-46bd-ad61-108b25d519b8",
+      "comment": "",
+      "command": "runScript",
+      "target": "throw new Error(\"One error message expected but \" + ${errorMessagesArray} + \" found\");",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5975bcb7-dd2e-4dae-bddb-33a754df9e48",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2566d970-ee96-4a1d-b1d0-f36bbe6b175f",
+    "name": "assertTwoErrorMessagesPresent",
+    "commands": [{
+      "id": "e88c4369-8f46-4ba9-b72b-46020bea3d0b",
+      "comment": "Only one error message is present",
+      "command": "executeScript",
+      "target": "return document.querySelectorAll('.error-message').length;",
+      "targets": [],
+      "value": "errorMessagesArray"
+    }, {
+      "id": "23ee7ced-1148-4241-8829-fa3751dd4ccc",
+      "comment": "",
+      "command": "if",
+      "target": "${errorMessagesArray}  != 2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bbb87b0-f1ce-4edc-98fd-121488a6c7bb",
+      "comment": "",
+      "command": "runScript",
+      "target": "throw new Error(\"Two errors expected but \" + ${errorMessagesArray} + \" found\");",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99254d79-62bd-4b23-ab43-bd86eadfac28",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "428b66a8-0898-482e-a1dc-94e6d3c1c816",
+    "name": "[NEGATIVE] register user: password with whitespace",
+    "commands": [{
+      "id": "72ed4bab-79d9-42e5-a573-71f6575a147c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dafe23c5-8c52-46d9-8938-6ad00b8d531e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3cdb5df-c6a3-4046-a94a-ddf1e36488e7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "59dc4c47-6c0d-468d-a733-1af5fccb0923",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a3ce7e-87ce-4e0e-9c7e-0d94c0bd98ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e65334-08cb-4ab4-b848-41669ee3baa6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "23fa4ace-561a-429a-b137-4f859ccc5840",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9604439-af81-43e3-8224-b0cf846f04e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "d24daad4-d7cc-4761-aa6a-627c86a3e4e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c137376b-136d-4af5-9e21-e97ccaa700fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser"
+    }, {
+      "id": "c33f3569-999a-4758-911d-39f770bcaead",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdb905ba-ee8a-411f-b7ee-566f131b6584",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Pwd with_1_whitespace"
+    }, {
+      "id": "f5e28da5-a9b5-407a-831c-d74969d757a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a68b950-2c24-4aac-a864-d3dd6874bc47",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Pwd with_1_whitespace"
+    }, {
+      "id": "e0cbfc14-7c38-4bc3-8bc2-26412aa6c442",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c34506b4-ba55-4b50-be19-027d0a981e10",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": "Password have from 8 to 20 characters long without spaces and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), a digit (0-9), and a special character (~`!@#$%^&*()+=_-{}[]|:;”’?/<>,.)"
+    }, {
+      "id": "0bb9f5d7-0145-4341-ac3a-3306dc3078fc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-err-msg",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "77475cf7-275b-4501-a6ec-675529282354",
+    "name": "[NEGATIVE] register user: password lowercase",
+    "commands": [{
+      "id": "9a08d9ea-e268-49cb-bbcb-4d1affd10bf6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b99a8ba-ce3f-4817-8bcb-102b614f8bf9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca735425-dcef-446d-a5e0-f22e41790f85",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "5694e920-810e-4bc6-ad51-82a1b612bbdf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c802f0-4d87-4e03-9596-48769ba9e8ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21c5e0e7-02f2-4204-9a07-006d33c375ef",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "65dc8fd6-1458-414e-b21b-e0aed4dbf6a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "316bf2f2-eacc-472c-a0ea-c257748d4677",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "96a4f3e0-78a1-49be-aec7-6b965f6fc9ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06a7a4a7-96f6-4764-8e4a-bd1e550cb807",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser"
+    }, {
+      "id": "6671c1de-f1de-4d5a-ab68-0df1e38afe18",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "212c8a64-4b58-4e9b-babe-1c9975919828",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "lowercase_pwd1"
+    }, {
+      "id": "9f1707b6-7435-4bc2-968a-03e69a52fcd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f21aa61a-a611-4f19-a40c-92ecfad223e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "lowercase_pwd1"
+    }, {
+      "id": "0f21052a-1ba2-49e5-8952-5f167ce863e3",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2346425f-ed04-471f-b382-8ae643a898ba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": "Password have from 8 to 20 characters long without spaces and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), a digit (0-9), and a special character (~`!@#$%^&*()+=_-{}[]|:;”’?/<>,.)"
+    }, {
+      "id": "17490c11-977c-4f79-ac6c-b83101f0872e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-err-msg",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5eb519b7-b625-43de-92a8-674609c4faf9",
+    "name": "[NEGATIVE] register user: password and confirm empty",
+    "commands": [{
+      "id": "29fcc8b4-25c9-4966-bbb2-15d7da4a5960",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44a3cdbd-cc9a-4fb7-b750-8be1d919c524",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9bdf398-5185-4c78-9519-5928ece4519c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "852bdea2-008e-462c-8cab-1acd1ea123a1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce9d87d0-5143-4734-a708-a75518950a9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b0b9833-2575-426e-81a0-a51e9b8223a4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "22db0788-bc7e-4082-80e2-ad694a065d95",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6031f987-ed7c-4ae2-aad0-f14bc85d3751",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "b5bb0cc7-1bea-4ad6-bb28-3ce93b3ebd18",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df229794-13a0-473d-8bb5-0ce0ada0b3d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testUser"
+    }, {
+      "id": "6cbc7c3e-1cf3-4b55-883e-f7acc5e98ca8",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aae8bed1-5687-46af-b4e2-9ced35155916",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa4d57fb-5e9c-45ff-962f-08acb2dc9e22",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f78265a8-deaa-4fe7-9f22-333b7990314a",
+      "comment": "",
+      "command": "run",
+      "target": "assertTwoErrorMessagesPresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d9d4742-459b-4338-ab1c-b46795dcd81b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=password-err-msg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba5d9b1a-2d33-4553-bb6a-71dc1d56e692",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": "Password have from 8 to 20 characters long without spaces and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), a digit (0-9), and a special character (~`!@#$%^&*()+=_-{}[]|:;”’?/<>,.)"
+    }, {
+      "id": "db48ee5d-c188-4a3b-a852-a9f79459bb8f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=confirm-err-msg",
+      "targets": [],
+      "value": "This field is required"
+    }]
+  }, {
+    "id": "e5c53a86-cb91-4cd2-923e-9bf8ab8ae33e",
+    "name": "[NEGATIVE] register user: repeatPassword missmatched",
+    "commands": [{
+      "id": "8d21d346-77f3-445b-a557-7917a35d2c5d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17ece1dd-9425-4a3d-95cb-d4658d97b478",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c21243aa-792e-4a33-a9fc-bfcee6982f5f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "a4dad406-e512-423f-9f13-0c7b8f94f191",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2d7d37-4c3f-4a5d-bda3-a9a5acec4ae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b48e60f-1353-4d12-b38e-97d5cf70d17f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "446c2fcd-4cb4-44af-9bc7-e0302c2a4009",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d88cb9f-32ae-427e-b13d-a16af1e76e00",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "b95b452b-4ca1-4b82-b13f-19acf87094b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d81503-bc85-4a16-9616-a7e7df6fef97",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "da6ae7d2-0898-492c-94bf-d41de921ac63",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead5bd08-ff74-496a-bd31-1151285c332f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "e6e2b51c-e719-4274-b0bf-cf890a9f3dd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5d4f764-93e6-4fbd-b8d9-790c58fb348d",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "mismatched_password"
+    }, {
+      "id": "08178c24-4935-474a-bbf4-77830427d409",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4737597f-c21b-43cf-b4b5-b42bb737aa64",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fca2985-23c0-4df5-97f3-1d623b627b34",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "Passwords do not match"
+    }]
+  }, {
+    "id": "a18c0038-4175-400e-8dfe-8c9efd16e824",
+    "name": "[NEGATIVE] register user: filled repeat pwd without touching pwd",
+    "commands": [{
+      "id": "8bfe766e-dd54-4d02-b548-5b9dce4d022a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bd19dca-5596-4ba2-9dcc-2fc936a9aec3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42c89664-074f-4cb4-902b-4f6ad133909c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "ea6fd4ab-7878-4498-9cae-acaf8356af12",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0949f16f-30ad-478f-8d17-11920a85dd06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3232e40b-e394-4407-a6f1-66cca1e3b81c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "65ad6e75-d0ff-4f9b-83b2-d5d2358d542a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb728c4-59ef-46eb-a7a5-cbd48defac5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "b4c83fc0-75d5-4fbd-8c1b-a09a781a0038",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f44c8663-277a-4e81-be97-a1a106dcfe85",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "6fea7fe6-26b3-453f-b351-34d2772cadde",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1829702-913b-473c-b27b-3e9b6189da3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "c5d024a4-7297-4bbd-8336-d04581ef1e27",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e2f1847-0fc0-4404-a030-e37cd8cd2be1",
+      "comment": "",
+      "command": "//run",
+      "target": "assertTwoErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb6f22bd-dbe8-4ef0-8c04-4517baa05c41",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=p.password-not-valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97fe65b5-a0ca-4fda-8b2d-8d579998d3c4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "Please type your password first!"
+    }]
+  }, {
+    "id": "2da45fdd-f53c-45e2-a0fc-c3dad569b46e",
+    "name": "[NEGATIVE] register user: repeat password empty",
+    "commands": [{
+      "id": "3e304efc-1551-4b5a-8a0f-e1a0c11c1b28",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.greencity.cx.ua/#/greenCity",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0febaa8-ac5d-4350-869a-7c56aec68bae",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f770602-5f36-4fd5-85de-5b91529338a2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn", "css:finder"],
+        ["xpath=//li[2]/div", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "00b46db0-ba7e-4786-9662-55ae0607b390",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb12899d-42a1-4891-9660-62c3b2999ad5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_sign-up-btn",
+      "targets": [
+        ["css=.header_sign-up-btn > span", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e1a255-9c94-476d-abb0-b1f8ce20a583",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subtitle-text",
+      "targets": [
+        ["css=.subtitle-text", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/h2", "xpath:idRelative"],
+        ["xpath=//app-sign-up/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Please enter your details to sign up.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your details to sign up."
+    }, {
+      "id": "81543388-d408-4a89-81a3-87dc2222317e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50f374ee-ba5b-405c-b334-f6d10b99e43b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "test@domain.com"
+    }, {
+      "id": "af24b181-6f8a-426a-854b-a9d80aa69a56",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ceaf83-0bbc-4183-bbc4-228687e902da",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestUser1"
+    }, {
+      "id": "f24379ab-3d33-40e1-8da9-5e601899fdfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2415e9ff-7839-475b-83f7-c2c2ce510618",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=form-control password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Test123!"
+    }, {
+      "id": "160f7e23-1827-411f-a7e0-40d7e8985e86",
+      "comment": "",
+      "command": "click",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91314c70-353a-43e8-a305-0b8f6b363319",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatPassword",
+      "targets": [
+        ["id=repeatPassword", "id"],
+        ["name=form-control password-confirm", "name"],
+        ["css=#repeatPassword", "css:finder"],
+        ["xpath=//input[@id='repeatPassword']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f460a72-0bd3-4bba-a0a5-397060bd134e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-0']/div/div/app-auth-modal/div/div/div[2]/div/app-sign-up/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b80aef-5934-4d41-bcb5-7bb3df25e118",
+      "comment": "",
+      "command": "run",
+      "target": "assertSingleErrorMessagePresent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fe9f3ee-a71f-4c3d-b0a3-56a13a4caeed",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=app-error > div",
+      "targets": [],
+      "value": "This field is required"
+    }]
+  }, {
+    "id": "fd5d8dec-d70e-430f-89c2-a08f5eb0b883",
+    "name": "assertNoErrorMessagesPresent",
+    "commands": [{
+      "id": "07a04468-0ac3-4cda-b595-b6b68dd214a5",
+      "comment": "Only one error message is present",
+      "command": "executeScript",
+      "target": "return document.querySelectorAll('.error-message').length;",
+      "targets": [],
+      "value": "errorMessagesArray"
+    }, {
+      "id": "248b9891-4395-4b49-8c86-fce15795b3e7",
+      "comment": "",
+      "command": "if",
+      "target": "${errorMessagesArray}  != 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39efa217-3b3a-4c0e-9470-35d77168b5a1",
+      "comment": "",
+      "command": "runScript",
+      "target": "throw new Error(\"No errors expected but \" + ${errorMessagesArray} + \" found\");",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0626933a-8d32-4ced-836f-5f34f45fcd97",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f38f04a4-2700-4aa8-999e-2f3e4d42acca",
+    "name": "Register to the application",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 400,
+    "tests": ["09af0352-bcdd-4143-a87e-1d64a4a43ee0", "b9eb4c93-5de4-4186-ab48-5faa83e4b1be", "a18c0038-4175-400e-8dfe-8c9efd16e824", "edbc688f-480f-412f-9125-95be141e35aa", "8711fd7b-9331-4301-95a2-8c3d23406656", "5eb519b7-b625-43de-92a8-674609c4faf9", "77475cf7-275b-4501-a6ec-675529282354", "428b66a8-0898-482e-a1dc-94e6d3c1c816", "2da45fdd-f53c-45e2-a0fc-c3dad569b46e", "e5c53a86-cb91-4cd2-923e-9bf8ab8ae33e", "af11cd1a-dd4f-4cc0-995d-13185fd54969", "a16cdc9d-1d10-4688-9cbd-ebc6701c7d9e", "4228078b-7f8e-47ca-8161-6418bb2d450b", "0f57ef93-708b-4646-a4b9-329b66e9dae4", "a150acc2-76de-40fa-814a-ff2007608c29", "9fe8fe45-507e-419b-8176-5dec11ac07ef", "e1cf02d0-9832-4a89-a065-51a433553626"]
+  }],
+  "urls": ["https://www.greencity.cx.ua/#/greenCity"],
+  "plugins": []
+}
