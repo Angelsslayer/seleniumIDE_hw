@@ -92,8 +92,8 @@ Make sure you have Node.js and npm installed on your system. Follow these steps 
 
 - :warning: If the Green City website loads in Ukrainian, it is due to the localization of our device and the script below may help resolve the issue. It also runs the script without GIU
 
-:white_check_mark: **Run this code to include a `.side.yaml` file with instructions to make it run silently (without GIU):**
+:white_check_mark: **Run this code to include a `side.yaml` file with instructions to make it run silently (without GIU):**
 
-    selenium-side-runner 05_Practical_TaskgreenCity_hw.side --config .side.yaml
+    selenium-side-runner 05_Practical_TaskgreenCity_hw.side --config side.yaml
 
 
